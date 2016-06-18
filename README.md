@@ -7,5 +7,5 @@ pip install base64
 
 Functions:
 keyGen(size=16)
-encryption(textToEncrypt, encryptionKey)
-decryption(textToDecrypt, encryptionKey)
+encrypt(textToEncrypt, encryptionKey)
+decrypt(textToDecrypt, encryptionKey)

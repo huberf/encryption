@@ -10,19 +10,17 @@ class encryption:
     secret = os.urandom(size)
     return secret
 
-  def encryption(self, privateInfo, key):
+  def encrypt(self, privateInfo, key):
     BLOCK_SIZE = 16
     PADDING = '{'
     pad = lambda s: s + (BLOCK_SIZE - len(s) % BLOCK_SIZE) * PADDING
     EncodeAES = lambda c, s: base64.b64encode(c.encrypt(pad(s)))
     secret = key
-    print 'encryption key:', secret
     cipher = AES.new(secret)
     encoded = EncodeAES(cipher, privateInfo)
-    print 'Encrypted string:', encoded
     return encoded
 
-  def decryption(self, encryptedString, key):
+  def decrypt(self, encryptedString, key):
     PADDING = '{'
     DecodeAES = lambda c, e: c.decrypt(base64.b64decode(e))
     encryption = encryptedString
@@ -36,4 +34,4 @@ class encryption:
       if not decoded[index] == PADDING:
         notHit = False
     decoded = decoded[0:index+1]
-    print decoded
+    return decoded
