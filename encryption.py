@@ -10,6 +10,14 @@ class encryption:
     secret = os.urandom(size)
     return secret
 
+  def padKey(self, text):
+    if len(text) <= 16:
+      for i in range(0, 16 - len(text)):
+        text += '$'
+    else:
+      text = text[0:16]
+    return text
+
   def encrypt(self, privateInfo, key):
     BLOCK_SIZE = 16
     PADDING = '{'
