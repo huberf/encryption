@@ -2,8 +2,7 @@
 A minimal Python encryption class 
 
 To setup simply type:
-pip install Crypto
-pip install base64
+pip install textcrypt
 
 Functions:
 keyGen(size=16)
