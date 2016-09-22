@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+textcrypt.egg-info/PKG-INFO
+textcrypt.egg-info/SOURCES.txt
+textcrypt.egg-info/dependency_links.txt
+textcrypt.egg-info/entry_points.txt
+textcrypt.egg-info/requires.txt
+textcrypt.egg-info/top_level.txt

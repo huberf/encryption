@@ -1,0 +1,7 @@
+Crypto
+
+[dev]
+check-manifest
+
+[test]
+coverage
