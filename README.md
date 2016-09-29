@@ -1,4 +1,4 @@
-# encryption
+# Textcrypt
 A minimal Python encryption class 
 
 To setup simply type:
